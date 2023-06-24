@@ -1,0 +1,28 @@
+name: Publish to surge.sh
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2-beta
+      with:
+          node-version: 18
+    - name: Build React App
+      run: |
+        npm install # Install Dependencies
+        CI=false npm run build # CI=false to ignore warnings
+    - name: Deploy to foo-bar.surge.sh
+      uses: dswistowski/surge-sh-action@v1
+      with:
+        domain: 'ebook-alba.surge.sh'
+        project: 'build'
+        login: ${{ secrets.surge_login }}
+        token: ${{ secrets.surge_token }}
+
