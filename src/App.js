@@ -1,32 +1,12 @@
 import * as React from "react";
+import "./App.css";
 import Tabs from "./Tabs";
 
 const App = () => {
   return (
-    <div
-      style={{
-        paddingBottom: "150px",
-      }}
-    >
-      <div
-        style={{
-          height: "220px",
-          backgroundColor: "blueviolet",
-          backgroundImage: "url(./detalhe.jpg)",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          marginTop: 0,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexFlow: "column",
-        }}
-      >
-        <div
-          style={{
-            width: "900px",
-          }}
-        >
+    <div>
+      <div className="header-container">
+        <div className="header">
           <h1
             style={{
               padding: "15px 10px",
@@ -48,37 +28,17 @@ const App = () => {
           </h2>
         </div>
       </div>
-      <div
-        style={{
-          height: "750px",
-          width: "900px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          padding: "50px 0",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: "50px",
-          }}
-        >
+      <div className="cover-container">
+        <div className="cover">
           <div>
             <img
               alt="Ebook: Mosaico de pesquisas em artes da cena: em foco,
                             dança contemporânea e performance"
-              style={{
-                height: "500px",
-              }}
+              className="cover-img"
               src="./capa.jpg"
             />
           </div>
-          <div
-            style={{
-              marginLeft: "30px",
-            }}
-          >
+          <div className="cover-description">
             <h2>
               Mosaico de pesquisas em artes da cena: em foco, dança
               contemporânea e performance
@@ -99,6 +59,24 @@ const App = () => {
               temática em questão, busca ampliar perspectivas teórico-práticas e
               estimular futuras investigações em áreas afins.
             </p>
+            <div style={{ textAlign: "center", marginTop: 50 }}>
+              <a
+                href={`${process.env.PUBLIC_URL}/Mosaico_de_Pesquisas_em_Artes_da_Cena.pdf`}
+                download
+              >
+                <button
+                  style={{
+                    backgroundColor: "blueviolet",
+                    padding: "15px 20px",
+                    color: "white",
+                    cursor: "pointer",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  Download PDF
+                </button>
+              </a>
+            </div>
           </div>
         </div>
         <Tabs />
