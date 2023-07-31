@@ -13,19 +13,18 @@ const TabsComponent = () => (
     </TabList>
     <TabPanel>
       <div className="tabs-text">
-        <h2>
-          Mosaico de pesquisas em artes da cena: em foco, dança contemporânea e
-          performance
-        </h2>
-        <p>DOI: 10.xxxxx/at.ed.xxxxxxx</p>
-
-        <p>ISBN: xxx-xx-xxxx-xxx-1</p>
-
         <p>
-          1. Artes Cênicas. I. Vieira, Alba Pedreira (Organizadora). II. Título.
+          Título:{" "}
+          <span style={{ fontWeight: 600 }}>
+            Mosaico de pesquisas em artes da cena: em foco, dança contemporânea
+            e performance
+          </span>
         </p>
-
-        <p>Ano: 2021</p>
+        {/* <p>DOI: 10.xxxxx/at.ed.xxxxxxx</p> */}
+        <p>Autora: Vieira, Alba Pedreira</p>
+        <p>ISBN: 978-65-88755-01-3</p>
+        <p>Editoras: Belo Horizonte: EBA-UFMG; São Paulo: Tikinet</p>
+        <p>Ano: 2023</p>
       </div>
     </TabPanel>
     <TabPanel>

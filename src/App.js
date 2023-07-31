@@ -23,8 +23,8 @@ const App = () => {
               marginTop: 0,
             }}
           >
-            1. Artes Cênicas. I. Vieira, Alba Pedreira (Organizadora). II.
-            Título.
+            Mosaico de pesquisas em artes da cena: em foco, dança contemporânea
+            e performance Alba Pedreira Vieira{" "}
           </h2>
         </div>
       </div>
