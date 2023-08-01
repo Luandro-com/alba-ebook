@@ -24,7 +24,7 @@ const App = () => {
             }}
           >
             Mosaico de pesquisas em artes da cena: em foco, dança contemporânea
-            e performance Alba Pedreira Vieira{" "}
+            e performance (Alba Pedreira Vieira)
           </h2>
         </div>
       </div>
